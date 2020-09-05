@@ -19,17 +19,19 @@ int main()
     B[i-1] = 1.0;
     C[i-1] = 0;
   }
+  double val;
 
   double start = get_time();
-
+  
   //matrix-matrix multiplication
   for (int i = 0; i < n; i++)
   {
     for (int j = 0; j < n; j++)
     {
+      val = A[(i*n)+j];
       for (int k = 0; k < n; k++)
       {
-	C[(i*n)+k] += A[(i*n)+j] * B[(j*n)+k];
+	C[(i*n)+k] += val * B[(j*n)+k];
         //printf("%.6f\n", C[(i*n)+k]);
       }
     }
