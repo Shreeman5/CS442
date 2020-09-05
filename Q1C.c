@@ -15,7 +15,7 @@ int main()
   //Initializationof the matrices
   for(int i = 1; i <= n*n; i++)
   {
-    A[i-1] = i;
+    A[i-1] = 1.0/i;
     B[i-1] = 1.0;
     C[i-1] = 0;
   }
