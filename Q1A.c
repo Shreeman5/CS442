@@ -8,9 +8,9 @@ int main()
   int n = 1000;
 
   //declaration of matrices to be used. C holds the matrix matrix multiplication solution
-  float* A = (float*)malloc(n*n*sizeof(float));
-  float* B = (float*)malloc(n*n*sizeof(float));
-  float* C = (float*)malloc(n*n*sizeof(float));
+  double* A = (double*)malloc(n*n*sizeof(double));
+  double* B = (double*)malloc(n*n*sizeof(double));
+  double* C = (double*)malloc(n*n*sizeof(double));
 
   //Initializationof the matrices
   for(int i = 1; i <= n*n; i++)

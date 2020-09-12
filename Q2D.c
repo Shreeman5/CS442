@@ -10,9 +10,9 @@ int main(int argc, char *argv[])
   //  printf("%d\n", n);
   
   //declaration of matrix and vectors to be used. B holds the matrix-vector multiplication
-  float* X = (float*)malloc(n*sizeof(float));
-  float* A = (float*)malloc(n*n*sizeof(float));
-  float* B = (float*)malloc(n*sizeof(float));
+  double* X = (double*)malloc(n*sizeof(double));
+  double* A = (double*)malloc(n*n*sizeof(double));
+  double* B = (double*)malloc(n*sizeof(double));
 
   //Initialization of the vecotrs
   for (int i = 1; i <= n; i++)
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
   
   double start = get_time();
 
-  //matrix-matrix multiplication
+  //matrix-vector multiplication
   for (int i = 0; i < n; i++)
   {
     for (int j = 0; j < n; j++)
