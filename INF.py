@@ -67,7 +67,7 @@ def BRUCK(ppn, num_nodes):
                   eager_step_intra_node, eager_size_intra_node, rend_step_intra_node, rend_size_intra_node)
 
 
-def NEW(ppn, num_nodes):
+def INF(ppn, num_nodes):
     short_step_inter_node = 0
     short_size_inter_node = 0
     eager_step_inter_node = 0
@@ -173,7 +173,7 @@ def main():
     for i in array:
         for j in range(3):
             k = i ** (j + 1)
-            NEW(i, k)
+            INF(i, k)
     arr3 = [None] * len(array_for_all)
     for i in range(0, len(array_for_all)):
         arr3[i] = array_for_all[i]
@@ -205,8 +205,8 @@ def main():
     plt.plot(string_array, arr4)
     plt.xlabel('PPN and Nodes')
     plt.ylabel('Time')
-    plt.title('NAP, NEW & BRUCK')
-    plt.legend(["NAP", "NEW", "BRUCK"])
+    plt.title('NAP, INF & BRUCK')
+    plt.legend(["NAP", "INF", "BRUCK"])
     plt.show()
 
 
