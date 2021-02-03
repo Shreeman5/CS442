@@ -1,6 +1,0 @@
-# Algorithm2
-
-This file describes the steps of Algorithm 2.
-
-## Calculating Distance
-
